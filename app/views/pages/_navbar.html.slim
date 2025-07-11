@@ -1,0 +1,75 @@
+.div class="transition-ease-out duration-700 z-20 shadow-navbar sticky top-0 bg-[#2e3844] h-0" data-controller="scroll-navbar" data-scroll-navbar-target="div"
+.hidden.md:flex.w-screen.justify-around.text-white.fixed.top-0.z-22  class="h-[125px] lg:h-[100px]  tracking-[3px] "
+  .flex.gap-8.text-xs class="w-[max]"
+    .flex.items-center.font-poppins
+      = link_to do
+        .flex.gap-2.items-center
+          i class="fa-solid fa-location-arrow"
+          p LES DESTINATIONS
+    .flex.items-center
+      = link_to "LA MARQUE"
+    .flex.items-center
+      = link_to "YATCHING"
+  .flex.items-center.font-paris class="w-[25vw]"
+    .flex.flex-col class=" tracking-[10px]"
+
+  .flex.items-center.gap-3.font-poppins.text-xs  class="w-[max]"
+    .flex.gap-2.items-center
+      = link_to do
+        .flex.gap-2.items-center
+          i class="fa-regular fa-envelope"
+          p CONTACT
+    .flex.items-center
+
+      = link_to do
+        .flex.gap-2.items-center
+          p FR
+          i class="fa-solid fa-caret-down"
+
+
+.flex.w-full.p-6.justify-between.items-start.fixed.top-0.z-22.md:hidden
+  .burger.z-22.flex.flex-col.gap-2.cursor-pointer.transition-all.duration-300 data-burger-target="burger" data-action="click->burger#toggleMenu"
+    span class="span w-[25px] h-[3px] bg-white transition-all duration-300"
+    span class="span w-[25px] h-[3px] bg-white transition-all duration-300"
+    span class="span w-[25px] h-[3px] bg-white transition-all duration-300"
+  .flex.z-20 data-burger-target="enveloppe"
+    i class="fa-regular fa-envelope text-white text-2xl transition-ease-out duration-400"
+
+.fixed.h-screen.w-screen.top-0.z-21 class="bg-[#889CB0] menu-hidden text-[#2E3844] transition ease-out duration-500" data-burger-target="menu"
+  .flex.flex-col.items-center.px-10.py-15 class="w-[100vw]"
+    .flex.flex-col.gap-3.justify-between class="w-[100%] text-[14px] tracking-[2px]"
+      .flex.justify-between.items-center.pt-6
+        .flex.items-center.gap-2
+          i class="fa-solid fa-location-arrow"
+          p.uppercase.font-bold class="tracking-[2px]" les destinations
+        i class="fa-solid fa-chevron-down"
+      .span-black
+      =link_to do
+        p.uppercase.ml-5 otoctone.thonon
+      .span-black
+      =link_to do
+        p.uppercase.ml-5 otoctone.combloux
+      .span-black
+      =link_to do
+        p.uppercase.ml-5 otoctone.eco
+      .span-black
+
+      .flex.justify-between.items-center.pt-6
+        .flex.items-center.gap-2
+          i class="fa-solid fa-home"
+          p.uppercase.font-bold les destinations
+        i class="fa-solid fa-chevron-down"
+      .span-black
+      =link_to do
+        p.uppercase.ml-5 la marque
+      .span-black
+      =link_to do
+        p.uppercase.ml-5 yatching
+      .span-black
+      .flex
+        =link_to do
+          p.uppercase.ml-5 fr
+        p.uppercase.ml-5 |
+        =link_to do
+          p.uppercase.ml-5 en
+      .span-black

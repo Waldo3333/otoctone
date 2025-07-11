@@ -1,0 +1,10 @@
+.flex.flex-col.items-center.justify-center.py-8.w-screen.lg:flex-row.lg:items-start class="opacity-0 transition-opacity duration-700" data-fade-in-target="fadeElement"
+  .lg:relative class="lg:w-[55vw] w-[90vw] lg:h-[700px]"
+    .lg:absolute.top-0.right-0.z-10.bg-yatch-4.p-8  class="w-full lg:w-[90%] h-58 lg:h-[500px] xl:left-0" data-paralax-target="yatchfour"
+    .px-8.absolute.bottom-0.left-10.bg-primary-200  class="hidden lg:block w-3/5 h-[400px] xl:left-0" data-paralax-target="yatchfourbg"
+  .flex.flex-col.items-center.lg:px-8.lg:block class="w-[90vw] text-center lg:text-left lg:w-[45vw]"
+    h2.font-family-title.text-2xl.tracking-widest.py-6.uppercase Connecting the yachting industry with humanitarian projects around the world.
+    .flex.flex-col.justify-start.gap-0.w-max class="w-[100%] items-center lg:items-left" data-controller="link-underline"
+      = link_to("https://www.reliefcrewfoundation.org/", target: "_blank") do
+        p.font-poppins.font-light.text-xs.uppercase class="text-center tracking-[2px]" data-action="mouseenter->link-underline#reduce mouseleave->link-underline#expand" https://www.reliefcrewfoundation.org/
+      div class="inline-block ease-custom  w-[100%] bg-black  h-[2px] duration-400" data-link-underline-target="line"
