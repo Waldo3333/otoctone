@@ -13,7 +13,7 @@ export default class extends Controller {
 		this.lineTarget.style.transform = "scaleX(0)";
 	}
 	expand() {
-		console.log("reduce");
+		console.log("expand");
 		this.lineTarget.style.transform = "scaleX(1)";
 	}
 }
