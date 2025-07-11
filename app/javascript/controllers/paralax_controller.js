@@ -22,6 +22,9 @@ export default class extends Controller {
 			}
 		});
 	}
+	disconnect() {
+		document.removeEventListener("scroll", this.scrollHandler);
+	}
 
 	animate(element, background) {
 		const rect = element.getBoundingClientRect();

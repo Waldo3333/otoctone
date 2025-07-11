@@ -7,7 +7,7 @@ export default class extends Controller {
 	connect() {
 		this.handleScroll = this.handleScroll.bind(this);
 		window.addEventListener("scroll", this.handleScroll);
-		this.handleScroll(); // vérifier au chargement aussi
+		this.handleScroll();
 	}
 
 	disconnect() {
