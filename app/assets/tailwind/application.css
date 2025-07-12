@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-gray: #2e3844;
+}
 body {
 	margin: 0;
 }
@@ -12,104 +19,106 @@ a:hover {
 	opacity: 0.5;
 }
 
-.font-family-title {
-	font-family: "VL NewParis Headline", sans-serif;
-	font-weight: 600;
-	color: #2e3844;
-}
+@layer utilities {
+	.font-family-title {
+		font-family: "VL NewParis Headline", sans-serif;
+		font-weight: 600;
+		color: #2e3844;
+	}
 
-.primary-200 {
-	color: #2e3844;
-}
-.bg-primary-200 {
-	background-color: #2e3844;
-}
+	.primary-200 {
+		color: #2e3844;
+	}
+	.bg-primary-200 {
+		background-color: #2e3844;
+	}
 
-.font-paris {
-	font-family: "VL NewParis Headline", sans-serif;
-}
+	.font-paris {
+		font-family: "VL NewParis Headline", sans-serif;
+	}
 
-.font-poppins {
-	font-family: "Poppins", sans-serif;
-}
+	.font-poppins {
+		font-family: "Poppins", sans-serif;
+	}
 
-.wysiwyg-wrapper {
-	font-weight: 300;
-	line-height: 27px;
-	letter-spacing: 1px;
-}
+	.wysiwyg-wrapper {
+		font-weight: 300;
+		line-height: 27px;
+		letter-spacing: 1px;
+	}
 
-.shadow-navbar {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
-}
+	.shadow-navbar {
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+	}
 
-.ease-custom {
-	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
+	.ease-custom {
+		transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	}
 
-.background-yoatch {
-	background-image: url(https://www.abys-yachting.com/images/home/home-slider__image.jpg);
-}
-.bg-yatch-1 {
-	background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/46/main_pictures/191/detail_webp/otoctone-frl03744.webp?1744626554);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.bg-yatch-2 {
-	background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/45/main_pictures/190/detail_webp/otoctone-drone5.webp?1707487863);
-	background-position: center;
-	background-size: cover;
-}
-.bg-yatch-3 {
-	background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/47/main_pictures/192/detail_webp/otoctone-frl03775.webp?1620309614);
-	background-position: center;
-}
+	.background-yoatch {
+		background-image: url(https://www.abys-yachting.com/images/home/home-slider__image.jpg);
+	}
+	.bg-yatch-1 {
+		background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/46/main_pictures/191/detail_webp/otoctone-frl03744.webp?1744626554);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.bg-yatch-2 {
+		background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/45/main_pictures/190/detail_webp/otoctone-drone5.webp?1707487863);
+		background-position: center;
+		background-size: cover;
+	}
+	.bg-yatch-3 {
+		background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/47/main_pictures/192/detail_webp/otoctone-frl03775.webp?1620309614);
+		background-position: center;
+	}
 
-.bg-yatch-4 {
-	background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/105/main_pictures/928/detail_webp/otoctone-capture_d-ecran_2025-04-16_a_15-37-17.webp?1744810665);
-	background-position: center;
-	background-size: cover;
-}
-.bg-yatch-5 {
-	background-image: url(https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=450,height=450,dpr=2/tour_img/ca941867e0ee3d93d31c297be9f8380c7981f1e70563bf09df3505be6a85d33b.jpg);
-	background-position: center;
-}
+	.bg-yatch-4 {
+		background-image: url(https://otoctone.s3.amazonaws.com/block_text_images/105/main_pictures/928/detail_webp/otoctone-capture_d-ecran_2025-04-16_a_15-37-17.webp?1744810665);
+		background-position: center;
+		background-size: cover;
+	}
+	.bg-yatch-5 {
+		background-image: url(https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=450,height=450,dpr=2/tour_img/ca941867e0ee3d93d31c297be9f8380c7981f1e70563bf09df3505be6a85d33b.jpg);
+		background-position: center;
+	}
 
-.img-footer img {
-	height: 30px;
-	object-fit: cover;
-}
-.form-border {
-	border: 2px solid #e2d3c6;
-}
-.input {
-	background-color: #26221a;
-	text-transform: uppercase;
-	color: #e2d3c6;
-}
+	.img-footer img {
+		height: 30px;
+		object-fit: cover;
+	}
+	.form-border {
+		border: 2px solid #e2d3c6;
+	}
+	.input {
+		background-color: #26221a;
+		text-transform: uppercase;
+		color: #e2d3c6;
+	}
 
-.burger.open .span:nth-child(1) {
-	transform: rotate(45deg) translateY(9px) translateX(8px);
-	background-color: #2e3844;
-}
+	.burger.open .span:nth-child(1) {
+		transform: rotate(45deg) translateY(9px) translateX(8px);
+		background-color: #2e3844;
+	}
 
-.burger.open .span:nth-child(2) {
-	opacity: 0;
-}
+	.burger.open .span:nth-child(2) {
+		opacity: 0;
+	}
 
-.burger.open .span:nth-child(3) {
-	transform: rotate(-45deg) translateY(-9px) translateX(8px);
-	background-color: #2e3844;
-}
+	.burger.open .span:nth-child(3) {
+		transform: rotate(-45deg) translateY(-9px) translateX(8px);
+		background-color: #2e3844;
+	}
 
-.menu-hidden {
-	transform: translateY(-100%);
-	opacity: 0;
-}
+	.menu-hidden {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
 
-.span-black {
-	width: 100%;
-	height: 2px;
-	background-color: #2e3844;
-	margin: 10px 0px;
+	.span-black {
+		width: 100%;
+		height: 2px;
+		background-color: #2e3844;
+		margin: 10px 0px;
+	}
 }
